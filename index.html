@@ -7,6 +7,7 @@
     
   <link rel="stylesheet" href="vendor/supersized/css/supersized.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+  <meta name="viewport" content="width=device-width">
   
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
@@ -128,10 +129,12 @@
       }
       
       // Mobile swipe events
-      $('ul#supersized').on('swipeleft', function(e) {
+      $('ul#supersized li').on('swipeleft', function(e) {
+        console.log("swipe");
         api.nextSlide();
       });
-      $('ul#supersized').on('swipeleft', function(e) {
+      $('ul#supersized li').on('swipeleft', function(e) {
+        console.log("swipe");
         api.prevSlide();
       })
       
@@ -140,7 +143,7 @@
 </head>
 <body>
   <div id="header">
-    <h1>Roy Steen Photography</h1>
+    <h1><span class="name">Roy Steen</span> Photography</h1>
     <div id="links">
       <a href="#coming-soon">Purchase</a>
       <a href="mailto:roy@roysteen.com">Contact</a>

@@ -69,3 +69,32 @@ body {
   #nextslide { right:10px; background:url('../img/forward.png'); }
   #prevslide.pause,
   #nextslide.pause { background:url('../img/pause.png');}
+  
+@media screen and (max-width: 640px) {
+  #header {
+    padding-top: 0.5em;
+  }
+  
+  #header h1 {
+   font-size: 30px;
+   text-align: center;
+   margin-bottom: 0.5em;
+  }
+  
+  #header h1 span.name {
+    font-size: 45px;
+  }
+  
+  #links {
+    float: none;
+    text-align: center;
+  }
+  
+  #links a {
+    margin: 0 0.5em 0;
+  }
+  
+  #watermark {
+    display: none;
+  }
+}
