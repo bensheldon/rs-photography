@@ -1,0 +1,71 @@
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+
+#header {
+  background: #fff;
+  background: rgba(255,255,255,0.75);
+  padding: 1em 1.75em;
+  border-bottom: 1px solid rgba(255,255,255, 0.3);
+  text-shadow: 0 1px 0px rgba(255,255,255, 0.4);
+}
+
+#header h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-top: 11px;
+  line-height: 1;
+}
+
+#links {
+    float: right;
+}
+
+#links a {
+  margin: 0 1em 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+#links a:hover {
+  text-decoration: underline;
+}
+
+#links a:last-child {
+  margin-right: 0;
+}
+
+#watermark {
+  background: transparent url('../img/watermark.png') no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 475px;
+  height: 275px;
+}
+
+.clear {
+  clear: both;
+}
+/* Slide Navigation */
+.slidenav { 
+  position:absolute; 
+  height:43px; 
+  width:43px; 
+  top:50%; 
+  margin-top:-21px; 
+  opacity:0.6; 
+  -webkit-transition: background-image 0.5s, opacity 0.5s;
+     -moz-transition: background-image 0.5s, opacity 0.5s;
+       -o-transition: background-image 0.5s, opacity 0.5s;
+          transition: background-image 0.5s, opacity 0.5s; 
+}
+.slidenav:active { margin-top:-19px; }
+.slidenav:hover { cursor:pointer; opacity: 1.0;}
+  #prevslide { left:10px; background:url('../img/backward.png'); }
+  #nextslide { right:10px; background:url('../img/forward.png'); }
+  #prevslide.pause,
+  #nextslide.pause { background:url('../img/pause.png');}
